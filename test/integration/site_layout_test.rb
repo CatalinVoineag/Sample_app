@@ -17,7 +17,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get signup_path
     assert_template 'users/new'
     assert_select "h1", "Sign up"
-    assert_select ".paragraph", "This will be a signup page for new users."
   end
 
 
